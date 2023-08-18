@@ -4,6 +4,7 @@
 
 - [Introduction](#introduction)
 - [Project Structure](#project-structure)
+- [UNet Architecture](#unet-architecture)
 - [Methodology](#methodology)
   - [Preprocessing](#preprocessing)
   - [Model Development](#model-development)
@@ -39,6 +40,28 @@ The repository contains the following files and directories:
 - `error.html`: An HTML file for error handling in the web application.
 - `index.html`: The HTML file for the main page of the web application.
 - `Project.pptx`: The PowerPoint presentation that provides an overview of the project.
+
+## UNet Architecture 
+UNET is a U-shaped encoder-decoder network architecture, which consists of four encoder blocks and four decoder blocks that are connected via a bridge. The encoder network (contracting path) half the spatial dimensions and double the number of filters (feature channels) at each encoder block
+
+Here's an explanation of the U-Net architecture:
+Encoder (Down sampling Path):
+The encoder path extracts features from the input image through a series of convolutional layers and max-pooling operations.
+At each level of the encoder, the spatial dimensions of the feature maps are reduced by half (via max-pooling), while the number of channels (feature maps) is increased.
+Decoder (Up sampling Path):
+The decoder path reconstructs the segmentation mask from the encoded feature maps.
+At each level of the decoder, the spatial dimensions of the feature maps are increased by a factor of two (via upsampling), and the number of channels is decreased.
+The decoder receives input from both the encoder and the previous layer of the decoder through skip connections.
+Skip Connections:
+Skip connections are used to transfer feature maps from the encoder to the corresponding level in the decoder.
+These connections help preserve fine-grained spatial information that is lost during down sampling.
+The feature maps from the encoder are concatenated with the feature maps in the decoder to provide additional context.
+Output Layer:
+The final layer of the U-Net produces a segmentation mask, where each pixel is assigned a label corresponding to a specific class.
+The output layer often uses a SoftMax activation function to produce class probabilities for each pixel.
+
+![1_jhYv-BI-dEQe85I7B4qjcQ](https://github.com/ACM40960/project-22204223/assets/67566026/9703c3bb-c5b7-41cb-9a1c-f865a2565ffd)
+
 
 ## Methodology
 
