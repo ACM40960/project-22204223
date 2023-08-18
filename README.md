@@ -1,12 +1,31 @@
 
 # Atherosclerosis Detection in CT Scan Images Using Deep Learning and AI Neural Networks
 
+
+- [Introduction](#introduction)
+- [Project Structure](#project-structure)
+- [Methodology](#methodology)
+  - [Preprocessing](#preprocessing)
+  - [Model Development](#model-development)
+  - [Training](#training)
+- [Results](#results)
+  - [Accuracy and Loss Plots](#accuracy-and-loss-plots)
+  - [Model Output Images](#model-output-images)
+- [Conclusion and Challenges](#conclusion-and-challenges)
+- [Future Use](#future-use)
+- [References](#references)
+- [Contributions](#contributions)
+- [Authors](#authors)
+- [Acknowledgments](#acknowledgments)
+
+
+
 ## Introduction
 This project aims to use deep learning and AI neural networks to detect atherosclerosis in CT scan images. Ultrasound imaging is a non-invasive, cost-effective, and widely accessible technique for visualizing the internal structures of the body. Automated detection of atherosclerosis in ultrasound images can aid in early diagnosis, risk assessment, and treatment planning.
 
 ![YdtYLY](https://github.com/ACM40960/project-22204223/assets/67566026/205e7000-fded-4cc9-a0d0-6596185de169)
 
-<img width="677" alt= "data" src = "https://github.com/ACM40960/project-22204223/assets/67566026/6ca01715-2189-4171-bce0-8c7701ed09c1">
+<img width="677" alt= "data" src = "https://github.com/ACM40960/project-22204223/assets/67566026/6ca01715-2189-4171-bce0-8c7701ed09c1" height="500">
 
 
 ## Project Structure
@@ -99,6 +118,22 @@ We have developed a web app that predicts the probability of detecting atheroscl
 - Datasets:
   - [Mayo Clinic Dataset](https://www.kaggle.com/datasets/hey24sheep/mayoclinicdataset)
   - [Atherosclerosis Segmentation](https://www.kaggle.com/datasets/davidpiln/atherosclerosis-segmentation)
+    
+
+## Contributions
+
+1. **Fork the Project**: Click the 'Fork' button at the top right of this page to create your own copy of this repository.
+2. **Clone Your Fork**: Clone your fork to your local machine using `git clone https://github.com/your-username/your-repo-name.git`.
+3. **Create a New Branch**: Create a new branch for your feature or fix using `git checkout -b feature/YourFeatureName`.
+4. **Make Your Changes**: Make and commit your changes with descriptive commit messages.
+5. **Push to Your Fork**: Push your changes to your fork on GitHub using `git push origin feature/YourFeatureName`.
+6. **Open a Pull Request**: Go to the 'Pull requests' tab on the original repository and click the 'New pull request' button. Select your fork and the branch you created, then click 'Create pull request'.
+7. **Wait for Review**: We will review your pull request and provide feedback. Please be patient and address any comments or requested changes.
+
+If you have any questions or need help, feel free to reach out to us or open an issue.
+
+Thanks for contributing!
+
 
 ## Authors
 - Abhinav Tyagi (22202296)
