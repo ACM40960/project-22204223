@@ -88,6 +88,10 @@ The matrix indicates that the classifier performs well in predicting Background,
 
 We have developed a web app that predicts the probability of detecting atherosclerosis with an accuracy of 92%.
 
+<img width="1680" alt="Screenshot 2023-08-18 at 11 48 55 PM" src="https://github.com/ACM40960/project-22204223/assets/67566026/6efe5ea3-cce9-4f8d-b03e-df8ea582b264">
+
+<img width="1680" alt="Screenshot 2023-08-18 at 11 51 16 PM" src="https://github.com/ACM40960/project-22204223/assets/67566026/4e2e661e-82b3-46ca-ac1d-3f001e167f15">
+
 ## References
 
 - [Performance of a Deep Neural Network Algorithm Based on a Small Medical Image Dataset](https://rdcu.be/djKW0)
