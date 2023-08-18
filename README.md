@@ -2,12 +2,13 @@
 # Atherosclerosis Detection in CT Scan Images Using Deep Learning and AI Neural Networks
 
 ## Introduction
-This project a
-ms to use deep learning and AI neural networks to detect atherosclerosis in CT scan images. Ultrasound imaging is a non-invasive, cost-effective, and widely accessible technique for visualizing the internal structures of the body. Automated detection of atherosclerosis in ultrasound images can aid in early diagnosis, risk assessment, and treatment planning.
+This project aims to use deep learning and AI neural networks to detect atherosclerosis in CT scan images. Ultrasound imaging is a non-invasive, cost-effective, and widely accessible technique for visualizing the internal structures of the body. Automated detection of atherosclerosis in ultrasound images can aid in early diagnosis, risk assessment, and treatment planning.
+
 ![YdtYLY](https://github.com/ACM40960/project-22204223/assets/67566026/205e7000-fded-4cc9-a0d0-6596185de169)
 
+<img width="677" alt= "data" src = "https://github.com/ACM40960/project-22204223/assets/67566026/6ca01715-2189-4171-bce0-8c7701ed09c1">
 
-![22051014_1470205306367397_3789200417942649414_o](https://github.com/ACM40960/project-22204223/assets/67566026/6ca01715-2189-4171-bce0-8c7701ed09c1)
+
 ## Project Structure
 The repository contains the following files and directories:
 
@@ -49,33 +50,7 @@ X_val, X_test, y_val, y_test = train_test_split(X_temp, y_temp, test_size=0.5, r
 ### Model Development
 Model Development: We used the U-Net architecture, a convolutional neural network (CNN) commonly used for image segmentation tasks. Below Given code is for U-net model, you can add more layers and hyperparameters for accuracy.
 
-```python
-
-# Define the U-Net model
-inputs = Input((None, None, 3))
-conv1 = Conv2D(32, 3, activation='relu', padding='same')(inputs)
-conv1 = Conv2D(32, 3, activation='relu', padding='same')(conv1)
-pool1 = MaxPooling2D(pool_size=(2, 2))(conv1)
-
-conv2 = Conv2D(64, 3, activation='relu', padding='same')(pool1)
-conv2 = Conv2D(64, 3, activation='relu', padding='same')(conv2)
-
-up3 = concatenate([UpSampling2D(size=(2, 2))(conv2), conv1], axis=3)
-conv3 = Conv2D(32, 3, activation='relu', padding='same')(up3)
-conv3 = Conv2D(32, 3, activation='relu', padding='same')(conv3)
-
-conv4 = Conv2D(4, 1, activation='softmax')(conv3)
-
-model = Model(inputs=[inputs], outputs=[conv4])
-
-model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
-
-# Define callbacks for early stopping and best model saving
-callbacks = [
-    EarlyStopping(patience=10, verbose=1),
-    ModelCheckpoint('model.h5', verbose=1, save_best_only=True, save_weights_only=True)
-]
-```
+<img width="677" alt="Screenshot 2023-08-17 at 5 08 43 PM" src="https://github.com/ACM40960/project-22204223/assets/67566026/62e88cc3-e43c-42a8-9c17-965dceef71bc">
 
 
 
