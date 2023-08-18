@@ -74,7 +74,9 @@ history = model.fit(
 ## Results
 
 ### Accuracy and Loss Plots
-
+<img width="765" alt="Screenshot 2023-08-17 at 5 16 44 PM" src="https://github.com/ACM40960/project-22204223/assets/67566026/df558513-b3fd-442b-b66f-78880257cee8">
+<img width="412" alt="Screenshot 2023-08-17 at 5 26 08 PM" src="https://github.com/ACM40960/project-22204223/assets/67566026/da327c96-2f74-4e6a-b61f-f036663625d1">
+<img width="334" alt="Screenshot 2023-08-17 at 7 12 11 PM" src="https://github.com/ACM40960/project-22204223/assets/67566026/4c0abac8-de37-4372-85f3-65adb0c0b3a0">
 
 ### Model Output Images
 
